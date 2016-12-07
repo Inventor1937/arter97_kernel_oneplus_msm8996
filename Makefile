@@ -405,7 +405,7 @@ KBUILD_CFLAGS   := -Werror -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -std=gnu89
 
 # arter97's optimizations
-KBUILD_CFLAGS	+= -pipe -fno-pic -O2 -march=armv8-a+crc
+KBUILD_CFLAGS	+= -pipe -fno-pic -O2 -mcpu=cortex-a57 -march=armv8-a+crc
 
 # Snapdragon 820 doesn't need 835769/843419 erratum fixes
 # some toolchain enables those fixes automatically, so opt-out
